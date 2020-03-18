@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-review-page',
-  templateUrl: './review.component.html',
-  styleUrls: ['./review.component.scss']
+  templateUrl: './review.page.html',
+  styleUrls: ['./review.page.scss']
 })
 export class ReviewPage implements OnInit {
 
