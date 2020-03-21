@@ -1,9 +1,4 @@
-header {
-
-}
-
 nav {
-
   ul {
     display: flex;
     list-style: none;
@@ -13,4 +8,8 @@ nav {
   li {
     margin-left: 2rem;
   }
+}
+
+.active-route {
+  color: orange;
 }

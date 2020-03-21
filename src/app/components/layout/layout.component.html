@@ -1,7 +1,5 @@
-<div class="layout-wrapper">
-  <app-header [hidden]="!isLoggedIn"></app-header>
-  <main>
-    <ng-content></ng-content>
-  </main>
-  <app-footer [hidden]="!isLoggedIn"></app-footer>
-</div>
+<app-header [hidden]="!isLoggedIn"></app-header>
+<main>
+  <ng-content></ng-content>
+</main>
+<app-footer [hidden]="!isLoggedIn"></app-footer>

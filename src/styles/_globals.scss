@@ -1,4 +1,4 @@
-* {
+*, h1 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,4 +13,8 @@ header,
 main,
 footer {
   @extend .content-wrapper;
+}
+
+.page-content {
+  height: 100%;
 }
