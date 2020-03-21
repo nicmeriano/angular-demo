@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./settings.page.scss']
 })
 export class SettingsPage implements OnInit {
-  public isRoot;
+  public isRoot: boolean;
   constructor(private router: Router) {
     router.events.subscribe(_ => {
       this.isRoot = router.url === '/settings';

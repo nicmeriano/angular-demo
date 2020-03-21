@@ -4,7 +4,6 @@ import { ComponentsModule } from '../components/components.module';
 import { PagesModule } from '../pages/pages.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { LoginComponent } from '../components/login/login.component';
 
 @NgModule({
   declarations: [],

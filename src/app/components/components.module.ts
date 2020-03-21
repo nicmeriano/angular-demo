@@ -33,7 +33,10 @@ import { GeneralSettingsComponent } from './general-settings/general-settings.co
     LayoutComponent,
     ReviewComponent,
     SettingsComponent,
-    LoginComponent]
+    LoginComponent,
+    ImportComponent,
+    UserSettingsComponent,
+    GeneralSettingsComponent]
 
 })
 export class ComponentsModule {}
