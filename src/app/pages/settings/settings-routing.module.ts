@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { SettingsPage } from './settings.page';
-import { ImportComponent } from 'src/app/components/import/import.component';
+import { ImportSettingsComponent } from 'src/app/components/import-settings/import-settings.component';
 import { UserSettingsComponent } from 'src/app/components/user-settings/user-settings.component';
 import { GeneralSettingsComponent } from 'src/app/components/general-settings/general-settings.component';
 
@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '',
     component: SettingsPage,
     children: [
-      { path: 'import', component: ImportComponent },
+      { path: 'import', component: ImportSettingsComponent },
       { path: 'user', component: UserSettingsComponent },
       { path: 'general', component: GeneralSettingsComponent }
     ]
