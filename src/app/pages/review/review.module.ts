@@ -8,4 +8,4 @@ import { ReviewPage } from './review.page';
   declarations: [ReviewPage],
   imports: [CommonModule, ReviewRoutingModule]
 })
-export class ReviewPageModule {}
+export class ReviewModule {}

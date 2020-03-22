@@ -8,11 +8,11 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardPageModule)
+    loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: 'review',
-    loadChildren: () => import('./pages/review/review.module').then(m => m.ReviewPageModule)
+    loadChildren: () => import('./pages/review/review.module').then(m => m.ReviewModule)
   },
   {
     path: 'login',
