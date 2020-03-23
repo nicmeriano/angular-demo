@@ -9,13 +9,14 @@ import { GeneralSettingsComponent } from 'src/app/components/general-settings/ge
 const routes: Routes = [
   {
     path: '',
-    component: SettingsPage,
-    children: [
-      { path: 'import', component: ImportSettingsComponent },
-      { path: 'user', component: UserSettingsComponent },
-      { path: 'general', component: GeneralSettingsComponent }
-    ]
-  }
+    component: SettingsPage
+  },
+  {
+    path: 'import',
+    loadChildren: () => import('./import/import-settings.module').then(m => m.ImportSettingsModule)
+  },
+  { path: 'user', component: UserSettingsComponent },
+  { path: 'general', component: GeneralSettingsComponent }
 ];
 
 @NgModule({

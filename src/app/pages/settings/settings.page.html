@@ -1,10 +1,8 @@
 <div class="page-content">
   <h1>Settings</h1>
-  <a routerLink="/settings" *ngIf="!isRoot">back</a>
-  <ul *ngIf="isRoot">
+  <ul>
     <li><a routerLink="import">import</a></li>
     <li><a routerLink="user">user</a></li>
     <li><a routerLink="general">general</a></li>
   </ul>
-  <router-outlet></router-outlet>
 </div>

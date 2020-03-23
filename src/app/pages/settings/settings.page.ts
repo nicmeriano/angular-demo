@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-settings-page',
@@ -7,12 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./settings.page.scss']
 })
 export class SettingsPage implements OnInit {
-  public isRoot: boolean;
-  constructor(private router: Router) {
-    router.events.subscribe(_ => {
-      this.isRoot = router.url === '/settings';
-    });
-  }
+  constructor() {}
 
   ngOnInit() {}
 }
