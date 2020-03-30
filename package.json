@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --namedChunks=true --stats-json",
     "test": "ng test",
     "lint": "ng lint",
-    "bundle-report": "webpack-bundle-analyzer dist/angular-demo/stats-es2015.json",
+    "bundle-report": "npm run build && webpack-bundle-analyzer dist/angular-demo/stats-es2015.json",
     "e2e": "ng e2e"
   },
   "private": true,
